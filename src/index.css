@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', 'Roboto Condensed', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/images/golf-course-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: 'Karla', 'Courier New',
+    monospace;
+}
+
+/* -apple-system, BlinkMacSystemFont */
+
+/* source-code-pro, Menlo, Monaco, Consolas, */

@@ -1,0 +1,54 @@
+.WeatherCard {
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    width: 100px;
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: white;
+    opacity: 0.9.5;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    
+}
+
+.WeatherCard-day {
+    font-weight: 600;
+}
+
+.WeatherCard-icon {
+    margin-top: -5px;
+}
+
+.WeatherCard-temp {
+    display: flex;
+    margin-top: -20px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.WeatherCard-raindrop {
+    margin-top: -8px;
+    display: block;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.WeatherCard-raindrop > .icon {
+    width: 15px;
+}
+
+.WeatherCard-raindrop > .pop {
+    vertical-align: top;
+}
+
+.WeatherCard-frost {
+    margin-top: -5px;
+    display: block;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 12px;
+}

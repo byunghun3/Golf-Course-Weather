@@ -1,0 +1,124 @@
+old code
+
+
+
+    // componentDidMount() {
+    //     if (this.state.courses.length === 0){
+    //         return this.setState({ searchResult: false})}
+    //      else {return this.setState({ searchResult: true})} 
+    // localStorage.setItem("courses", JSON.stringify(this.state.courses))
+    // JSON.parse(localStorage.getItem("courses") || "[]")
+    // }
+
+                        {/* <div className="course"> */}
+                    {/* <div>{this.state.showInput && <form onSubmit={this.handleSave}> */}
+                        {/* <input type="text" placeholder="Course name" name="courseCalled" value={this.state.courseCalled} onChange={this.handleChange} /> */}
+                        {/* <button type="submit">save</button> */}
+                        {/* </form>} */}
+                    {/* {this.state.showCourseName && <span>{courseNames[0]}</span>} */}
+                    {/* {courseNames[0]}<br/>
+                    {courseLoc[0]}
+                    <button>edit</button>
+                    <button>remove</button>
+                    </div>
+                    <div className="courses">{courses[0]}</div>
+                    <div>{this.state.showInput && <form onSubmit={this.handleSave}>
+                        <input type="text" placeholder="Course name" name="courseCalled" value={this.state.courseCalled} onChange={this.handleChange} />
+                        <button type="submit">save</button>
+                        </form>}
+                    {courseNames[1]} {courseLoc[1]}</div>
+                    <div>{courses[1]}</div>
+                    <div>{courseLoc[2]}</div>
+                    <div>{courses[2]}</div>
+                    <div>{courseLoc[3]}</div>
+                    <div>{courses[3]}</div>
+                    <div>{courseLoc[4]}</div>
+                    <div>{courses[4]}</div> */}
+                    {/* <div>{cities}</div> */}
+
+                   {/* </div> */}
+                {/* <form><button onSubmit={this.handleSubmit}>x</button></form>
+                {this.state.searchResult &&
+                    <div className="display-data">
+                        <form onSubmit={this.handleSubmit}>
+                            {this.state.showInput && <div><input type="text" name="courseName" placeHolder="Course name"
+                            value={this.state.courseName} onChange={this.handleChange}/> 
+                            <button type="submit" onSubmit={this.handleSubmit}>save</button>
+                            </div>}
+                            <span>{this.state.showCourseName && <span>{this.state.courseName}</span>}
+                            </span> */}
+
+
+
+                            
+                            {/* <span>{this.state.displayData.city_name}, {this.state.displayData.state_code}</span><br />
+                            <span><Icon icon={this.state.displayData.code} /></span><br />
+                            <span>{Math.round(this.state.displayData.max_temp)}°
+                                / {Math.round(this.state.displayData.min_temp)}°</span><br />
+                            <span>{this.state.displayData.rain}% rain</span><br /> */}
+                        {/* </form> */}
+                    {/* </div> */}
+                {/* } */}
+
+
+                // displayData.city_name = response.data.city_name
+        // displayData.state_code = response.data.state_code
+        // displayData.code = response.data.data[0].weather.code
+        // displayData.min_temp = response.data.data[0].min_temp
+        // displayData.max_temp = response.data.data[0].max_temp
+        // displayData.rain = response.data.data[0].pop
+
+        // this.setState({ displayData })
+
+        // const icon = this.state.display.map(el => {
+        //     return el.weather.code;
+        // })
+
+        // const date = this.state.display.map(el => {
+        //     return el.datetime;
+        // })
+        
+        // const max_temp = this.state.display.map(el => {
+        //     return Math.round(el.max_temp)
+        // })
+        
+        // const min_temp = this.state.display.map(el => {
+        //     return Math.round(el.min_temp)
+        // })
+
+        // const rain = this.state.weather.map(el => {
+        //     return Math.round(el.pop)
+        // })
+
+                // const cities = this.state.cityLocation.map(city => {
+        //     return <span key={city.id}>
+        //         <button onClick={this.removeCity}>remove</button>{city.city}</span>
+        // })
+
+                /* <CourseName courseName="Darlington" removeCourse={this.handleRemove}/>{el.city}, {el.state}</span><span className="weather-row">  */
+
+            /* <WeatherCard day={this.getDay(`${el.info[0].datetime}${t}`)} date={this.getDate(`${el.info[0].datetime}${t}`)} icon={el.info[0].weather.code} maxTemp={Math.round(el.info[0].max_temp)} minTemp={Math.round(el.info[0].min_temp)} rain={el.info[0].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[1].datetime}${t}`)} date={this.getDate(`${el.info[1].datetime}${t}`)} icon={el.info[1].weather.code} maxTemp={Math.round(el.info[1].max_temp)} minTemp={Math.round(el.info[1].min_temp)} rain={el.info[1].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[2].datetime}${t}`)} date={this.getDate(`${el.info[2].datetime}${t}`)} icon={el.info[2].weather.code} maxTemp={Math.round(el.info[2].max_temp)} minTemp={Math.round(el.info[2].min_temp)} rain={el.info[2].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[3].datetime}${t}`)} date={this.getDate(`${el.info[3].datetime}${t}`)} icon={el.info[3].weather.code} maxTemp={Math.round(el.info[3].max_temp)} minTemp={Math.round(el.info[3].min_temp)} rain={el.info[3].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[4].datetime}${t}`)} date={this.getDate(`${el.info[4].datetime}${t}`)} icon={el.info[4].weather.code} maxTemp={Math.round(el.info[4].max_temp)} minTemp={Math.round(el.info[4].min_temp)} rain={el.info[4].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[5].datetime}${t}`)} date={this.getDate(`${el.info[5].datetime}${t}`)} icon={el.info[5].weather.code} maxTemp={Math.round(el.info[5].max_temp)} minTemp={Math.round(el.info[5].min_temp)} rain={el.info[5].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[6].datetime}${t}`)} date={this.getDate(`${el.info[6].datetime}${t}`)} icon={el.info[6].weather.code} maxTemp={Math.round(el.info[6].max_temp)} minTemp={Math.round(el.info[6].min_temp)} rain={el.info[6].pop}/>
+            <WeatherCard day={this.getDay(`${el.info[7].datetime}${t}`)} date={this.getDate(`${el.info[7].datetime}${t}`)} icon={el.info[7].weather.code} maxTemp={Math.round(el.info[7].max_temp)} minTemp={Math.round(el.info[7].min_temp)} rain={el.info[7].pop}/> */
+
+        render() {
+        const {onSubmit, onClick, name, description, main_temp, rain} = this.props;
+        return (
+            <div className="weather-form">
+                <form className="weather-form-popup" 
+                        // onSubmit={this.handleSubmit}>
+                        onSubmit={onSubmit}>
+                    <input type="text"/>
+                    <span>{name}</span><br/>
+                    <span>{description}</span><br/>
+                    <span>{main_temp}</span><br/>
+                    <span>{rain}</span><br/>
+                    <button type="button">save</button>
+                </form>
+                <button onClick={onClick}>aaw</button>
+            </div>

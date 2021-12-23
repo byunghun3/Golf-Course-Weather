@@ -1,0 +1,152 @@
+.Course {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9fr;
+      grid-template-columns: 1fr 9fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: 0 15px 0 3px;
+}
+
+.Course-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Course-name-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 5px 0 5px;
+}
+
+.Course-input-bar {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  padding: 5px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  -webkit-box-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.Course-input-bar:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.Course-name-btn {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: red;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.Course-name-btn:hover {
+  opacity: 1;
+}
+
+.Course-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px 4px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Course-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Course-loc {
+  font-size: 13px;
+}
+
+.Course-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Course-btn > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 7px;
+}
+
+.Course-btn-edit {
+  width: 23px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.Course-btn-edit:hover {
+  cursor: pointer;
+}
+
+.Course-btn-dlt {
+  width: 13px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.Course-weather-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=Course.css.map */

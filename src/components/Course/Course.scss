@@ -1,0 +1,105 @@
+.Course {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    color: white;
+    margin: 0 15px 0 3px;
+}
+
+.Course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.Course-name-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 5px 0 5px;
+}
+
+.Course-input-bar {
+    width: 90%;
+    display: flex;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    padding: 5px;
+    transition: ease 0.3s;
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.Course-input-bar:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.Course-name-btn {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.Course-name-btn:hover {
+    opacity: 1;
+}
+
+.Course-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 4px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);    
+}
+
+.Course-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Course-loc {
+    font-size: 13px;
+}
+
+.Course-btn {
+    display: flex;
+}
+
+.Course-btn > * {
+    display: flex;
+    margin: 0 7px;
+}
+
+.Course-btn-edit {
+    width: 23px;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.Course-btn-edit:hover {
+    cursor: pointer;
+
+}
+
+.Course-btn-dlt {
+    width: 13px;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.Course-weather-row {
+    display: flex;
+    justify-content: space-between;
+}
