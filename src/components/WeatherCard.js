@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Icon from '../Icon/Icon';
-import Frost from '../Frost/Frost';
-import Raindrop from '../../assets/icons/raindrop.png';
-import './WeatherCard.scss';
-
+import Icon from './Icon';
+import Frost from './Frost';
+import Raindrop from '../assets/icons/raindrop.png';
+import '../styles/scss/WeatherCard.scss';
 
 class WeatherCard extends Component {
     render() {

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import FrostIcon from '../../assets/icons/frost.png';
-import './Frost.scss';
-
+import FrostIcon from '../assets/icons/frost.png';
+import '../styles/scss/Frost.scss';
 
 class Frost extends Component {
     constructor(props) {
         super(props);
         this.renderFrost = this.renderFrost.bind(this);
     }
-    
+
     renderFrost(icon, minTemp) {
         if (icon === 800 && minTemp >= 40) {
             return 0;
@@ -31,13 +30,13 @@ class Frost extends Component {
         } else if (icon !== (800 || 801 || 802) && minTemp < 32) {
             return 80;
         }
-        else {return "Frost Delay";}
+        else { return "Frost Delay"; }
     }
 
     render() {
         return (
             <div className="Frost">
-                <img className="Frost-icon" src={FrostIcon} alt="Frost"/> 
+                <img className="Frost-icon" src={FrostIcon} alt="Frost" />
                 <span className="Frost-percent">{this.renderFrost(this.props.icon, this.props.minTemp)}%</span>
             </div>
         )

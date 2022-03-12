@@ -1,15 +1,15 @@
 import './App.css';
-import CourseWeather from './components/CourseWeather/CourseWeather';
+import CourseWeather from './components/CourseWeather';
 import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="App">
       <ErrorBoundary>
-      <CourseWeather />  
-      <div className="attribution">
-      Icons from <a href="https://icons8.com">https://icons8.com</a>
-      </div>
+        <CourseWeather />
+        <div className="attribution">
+          Icons from <a href="https://icons8.com">https://icons8.com</a>
+        </div>
       </ErrorBoundary>
     </div>
   );

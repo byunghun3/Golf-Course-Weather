@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import WeatherCard from '../WeatherCard/WeatherCard';
-import Edit from '../../assets/icons/edit.png';
-import Delete from '../../assets/icons/close.svg';
-import './Course.scss';
+import WeatherCard from './WeatherCard';
+import Edit from '../assets/icons/edit.png';
+import Delete from '../assets/icons/close.svg';
+import '../styles/scss/Course.scss';
 
 class Course extends Component {
     constructor(props) {

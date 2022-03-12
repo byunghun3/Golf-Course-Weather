@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Course from '../Course/Course';
-import WeatherCard from '../WeatherCard/WeatherCard';
-import SearchBar from '../SearchBar/SearchBar';
-import Axios from 'axios';
-import '../../styles/scss/CourseWeather.scss';
-import GolfLogo from '../../assets/icons/golf.png';
-import GolfBall from '../../assets/icons/golf-ball.png';
 import { v4 as uuidv4 } from 'uuid';
+import Axios from 'axios';
+import Course from './Course';
+import WeatherCard from './WeatherCard';
+import SearchBar from './SearchBar';
+import GolfLogo from '../assets/icons/golf.png';
+import GolfBall from '../assets/icons/golf-ball.png';
+import '../styles/scss/CourseWeather.scss';
 
 const API = {
     url: "http://api.weatherbit.io/v2.0/forecast/daily?",

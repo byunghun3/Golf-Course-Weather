@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Sunny from '../../assets/icons/sunny.png';
-import Cloudy from '../../assets/icons/cloudy.png';
-import PartlyCloudy from '../../assets/icons/partly-cloudy.png';
-import Thunderstorm from '../../assets/icons/thunderstorm.png';
-import Rainy from '../../assets/icons/rainy.png';
-import Snowy from '../../assets/icons/snowy.png';
-import './Icon.scss';
+import Sunny from '../assets/icons/sunny.png';
+import Cloudy from '../assets/icons/cloudy.png';
+import PartlyCloudy from '../assets/icons/partly-cloudy.png';
+import Thunderstorm from '../assets/icons/thunderstorm.png';
+import Rainy from '../assets/icons/rainy.png';
+import Snowy from '../assets/icons/snowy.png';
+import '../styles/scss/Icon.scss';
 
 class Icon extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class Icon extends Component {
 
     renderIcons(icon) {
         switch (icon) {
-            case 200:   
+            case 200:
             case 201:
             case 202:
             case 230:
@@ -33,7 +33,7 @@ class Icon extends Component {
             case 520:
             case 521:
             case 522:
-                return <img className="Icon" src={Rainy} alt="Rain" />;      
+                return <img className="Icon" src={Rainy} alt="Rain" />;
             case 600:
             case 601:
             case 602:
@@ -41,7 +41,7 @@ class Icon extends Component {
             case 621:
             case 622:
             case 623:
-                return <img className="Icon" src={Snowy} alt="Snow" />;        
+                return <img className="Icon" src={Snowy} alt="Snow" />;
             case 800:
                 return <img className="Icon" src={Sunny} alt="Sunny" />;
             case 801:
