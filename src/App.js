@@ -1,6 +1,6 @@
 import './App.css';
 import CourseWeather from './components/CourseWeather/CourseWeather';
-import ErrorBoundary from './components/ErrorBonudary';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (

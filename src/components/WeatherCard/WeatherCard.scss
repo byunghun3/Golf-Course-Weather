@@ -1,17 +1,15 @@
 .WeatherCard {
     justify-content: center;
     align-items: center;
-    margin: 15px 0px;
     width: 100px;
-    font-size: 13px;
-    font-weight: 400;
-    color: black;
+    margin: 15px 0;
     border: 1px solid white;
     border-radius: 5px;
-    background: white;
-    opacity: 0.9.5;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
-    
+    background: white;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .WeatherCard-day {
@@ -24,15 +22,15 @@
 
 .WeatherCard-temp {
     display: flex;
-    margin-top: -20px;
     justify-content: space-between;
+    margin-top: -20px;
     padding: 10px;
 }
 
 .WeatherCard-raindrop {
-    margin-top: -8px;
     display: block;
     justify-content: center;
+    margin-top: -8px;
     margin-right: 5px;
     font-size: 12px;
 }
@@ -46,9 +44,15 @@
 }
 
 .WeatherCard-frost {
-    margin-top: -5px;
     display: block;
     justify-content: center;
+    margin-top: -5px;
     margin-right: 5px;
     font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .WeatherCard {
+        margin: 2% 0 2% 10%;
+    }
 }

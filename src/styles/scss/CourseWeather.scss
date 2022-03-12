@@ -8,10 +8,8 @@
 
 .CourseWeather-top-section {
     display: flex;
-    // grid-template-columns: 2fr 5fr 1fr;
     justify-content: center;
     align-items: start;
-    border: solid white;
 }
 
 .CourseWeather-header {
@@ -20,15 +18,13 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    // margin: -50px 0 0 10px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.3);  
-    border: solid red;  
 }
 
 .CourseWeather-header > img {
-    width: 5rem;
-    height: auto;
     vertical-align: bottom;
+    height: auto;
+    width: 5rem;
     margin-left: 10px;
     filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
 }
@@ -40,12 +36,9 @@
 .CourseWeather-form {
     flex: 5;
     display: flex;
-    // margin-top: -70px;
-    // margin-right: 170px;
-    margin-top: 2%;
     justify-content: center;
     align-items: center;
-    border: solid green;
+    margin-top: 2%;
 }
 
 .CourseWeather-search-bar {
@@ -53,10 +46,10 @@
     width: 80%;
     padding: 5px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
-    transition: ease 0.3s;
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    transition: ease 0.3s;
     cursor: text;
 
     &:focus {
@@ -64,25 +57,21 @@
     }
 }
 
-// .CourseWeather-search-bar:focus {
-//     background-color: rgba(255, 255, 255, 0.9);
-// }
-
 .CourseWeather-search-btn {
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    background-color: $redColor;
+    height: 40px;
+    width: 90px;
+    margin-top: 23px;
     margin-left: 10px;
     padding: 7px;
     border: none;
     border-radius: 4px;
-    opacity: 0.85;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: $redColor;
+    opacity: 0.85;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
-    width: 90px;
-    height: 40px;
-    margin-top: 23px;
 
     &:hover {
         opacity: 1;
@@ -92,7 +81,6 @@
 .CourseWeather-legend-card {
     flex: 1;
     display: flex;
-    // margin-right: -150px;
 }
 
 .CourseWeather-loader {
@@ -118,7 +106,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
-        border: solid orange;
     }
     .CourseWeather-header > img {
         width: 3rem;
@@ -128,11 +115,9 @@
         margin-left: 0.5rem;
     }
     .CourseWeather-form {
-        // flex: 0.1;
         margin: 2% 0;
     }
     .CourseWeather-legend-card {
-        // flex: 0.1;
         margin: 2% 0;
     }
 }
