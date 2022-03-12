@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -42,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "http-proxy-middleware": "^2.0.1"
+    "http-proxy-middleware": "^2.0.1",
+    "sass": "^1.49.9"
   }
 }
