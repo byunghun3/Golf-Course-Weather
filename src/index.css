@@ -24,6 +24,12 @@ code {
     monospace;
 }
 
+@media (max-width: 800px) {
+  body {
+    background-size: cover;
+  }
+}
+
 /* -apple-system, BlinkMacSystemFont */
 
 /* source-code-pro, Menlo, Monaco, Consolas, */
