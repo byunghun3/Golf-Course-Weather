@@ -1,19 +1,20 @@
+@use '../abstracts/Variables' as *;
+
 .WeatherCard {
     justify-content: center;
     align-items: center;
-    width: 100px;
+    min-width: 100px;
     margin: 15px 0;
     border: 1px solid white;
     border-radius: 5px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: $boxShadow;
     background: white;
     color: black;
     font-size: 13px;
-    font-weight: 400;
 }
 
 .WeatherCard-day {
-    font-weight: 600;
+    font-weight: $boldFont;
 }
 
 .WeatherCard-icon {

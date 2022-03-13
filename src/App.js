@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <ErrorBoundary>
-        <CourseWeather />
+        <div className="content">
+          <CourseWeather />
+        </div>
         <div className="attribution">
           Icons from <a href="https://icons8.com">https://icons8.com</a>
         </div>

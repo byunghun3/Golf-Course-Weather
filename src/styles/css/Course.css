@@ -1,127 +1,17 @@
-.Course {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 15px 0 3px;
-  color: white;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 32 |     background-color: $inputColor;
+ *    |                       ^^^^^^^^^^^
+ *    '
+ *   src/styles/scss/Course.scss 32:23  root stylesheet */
 
-.Course-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 10%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 32 \2502      background-color: $inputColor;\a    \2502                        ^^^^^^^^^^^\a    \2575 \a   src/styles/scss/Course.scss 32:23  root stylesheet";
 }
-
-.Course-name-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Course-input-bar {
-  display: flex;
-  border: none;
-  width: 80%;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 1px 1px rgba(255, 255, 255, 0.2);
-  transition: ease 0.3s;
-}
-.Course-input-bar:focus {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.Course-name-btn {
-  margin-top: 20px;
-  padding: 7px;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  background-color: red;
-  opacity: 0.85;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.Course-name-btn:hover {
-  opacity: 1;
-}
-
-.Course-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 25px 4px;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.Course-name {
-  margin: 1.5% 0;
-  word-break: break-word;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.Course-loc {
-  margin: 1.5% 0;
-  font-size: 13px;
-}
-
-.Course-btn {
-  display: flex;
-  margin: 1.5% 0;
-}
-
-.Course-btn > * {
-  display: flex;
-  margin: 0 7px;
-}
-
-.Course-btn-edit {
-  width: 23px;
-  cursor: pointer;
-  filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
-}
-
-.Course-btn-dlt {
-  width: 13px;
-  cursor: pointer;
-  filter: drop-shadow(3px 3px rgba(0, 0, 0, 0.3));
-}
-
-.Course-weather-row {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-
-@media (max-width: 1000px) {
-  .Course-list {
-    width: 20%;
-  }
-
-  .Course-weather-row {
-    flex-wrap: wrap;
-    justify-content: start;
-    width: 80%;
-  }
-}
-@media (max-width: 520px) {
-  .Course-list {
-    width: 30%;
-  }
-
-  .Course-weather-row {
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 70%;
-  }
-}
-
-/*# sourceMappingURL=Course.css.map */

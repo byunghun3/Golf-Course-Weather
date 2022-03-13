@@ -1,60 +1,17 @@
-.WeatherCard {
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  margin: 15px 0;
-  border: 1px solid white;
-  border-radius: 5px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
-  background: white;
-  color: black;
-  font-size: 13px;
-  font-weight: 400;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 10 |     box-shadow: $boxShadow;
+ *    |                 ^^^^^^^^^^
+ *    '
+ *   src/styles/scss/WeatherCard.scss 10:17  root stylesheet */
 
-.WeatherCard-day {
-  font-weight: 600;
-}
-
-.WeatherCard-icon {
-  margin-top: -5px;
-}
-
-.WeatherCard-temp {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -20px;
-  padding: 10px;
-}
-
-.WeatherCard-raindrop {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  justify-content: center;
-  margin-top: -8px;
-  margin-right: 5px;
-  font-size: 12px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      box-shadow: $boxShadow;\a    \2502                  ^^^^^^^^^^\a    \2575 \a   src/styles/scss/WeatherCard.scss 10:17  root stylesheet";
 }
-
-.WeatherCard-raindrop > .icon {
-  width: 15px;
-}
-
-.WeatherCard-raindrop > .pop {
-  vertical-align: top;
-}
-
-.WeatherCard-frost {
-  display: block;
-  justify-content: center;
-  margin-top: -5px;
-  margin-right: 5px;
-  font-size: 12px;
-}
-
-@media (max-width: 1000px) {
-  .WeatherCard {
-    margin: 2% 0 2% 10%;
-  }
-}
-
-/*# sourceMappingURL=WeatherCard.css.map */

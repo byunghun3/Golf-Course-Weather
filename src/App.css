@@ -4,9 +4,20 @@
   font-size: 50px;
 }
 
+.content {
+  min-height: 100vh;
+}
+
 .attribution {
   height: 30px;
   margin-top: 30px;
   font-size: 8px;
 }
 
+.attribution > a {
+  text-decoration: none;
+}
+
+.attribution > a:visited {
+  color: #0000EE;
+}
