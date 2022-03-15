@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/golf-course-weather/static/css/main.ae626a32.chunk.css",
+    "main.js": "/golf-course-weather/static/js/main.42be884c.chunk.js",
+    "main.js.map": "/golf-course-weather/static/js/main.42be884c.chunk.js.map",
+    "runtime-main.js": "/golf-course-weather/static/js/runtime-main.21dd8614.js",
+    "runtime-main.js.map": "/golf-course-weather/static/js/runtime-main.21dd8614.js.map",
+    "static/js/2.aebc5727.chunk.js": "/golf-course-weather/static/js/2.aebc5727.chunk.js",
+    "static/js/2.aebc5727.chunk.js.map": "/golf-course-weather/static/js/2.aebc5727.chunk.js.map",
+    "static/js/3.ae436e1b.chunk.js": "/golf-course-weather/static/js/3.ae436e1b.chunk.js",
+    "static/js/3.ae436e1b.chunk.js.map": "/golf-course-weather/static/js/3.ae436e1b.chunk.js.map",
+    "index.html": "/golf-course-weather/index.html",
+    "static/css/main.ae626a32.chunk.css.map": "/golf-course-weather/static/css/main.ae626a32.chunk.css.map",
+    "static/js/2.aebc5727.chunk.js.LICENSE.txt": "/golf-course-weather/static/js/2.aebc5727.chunk.js.LICENSE.txt",
+    "static/media/close.9b3ca0a0.svg": "/golf-course-weather/static/media/close.9b3ca0a0.svg",
+    "static/media/index.css": "/golf-course-weather/static/media/golf-course-1.a9d27f8e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21dd8614.js",
+    "static/js/2.aebc5727.chunk.js",
+    "static/css/main.ae626a32.chunk.css",
+    "static/js/main.42be884c.chunk.js"
+  ]
+}
