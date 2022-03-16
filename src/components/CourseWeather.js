@@ -9,7 +9,7 @@ import GolfBall from '../assets/icons/golf-ball.png';
 import '../styles/scss/CourseWeather.scss';
 
 const API = {
-    url: "http://api.weatherbit.io/v2.0/forecast/daily?",
+    url: "https://api.weatherbit.io/v2.0/forecast/daily?",
     key: "77ea14a12fa9443bb471a358400bbfc3"
 }
 
