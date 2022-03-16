@@ -38,11 +38,13 @@ class CourseWeather extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.getWeather();
-        this.setState({
-            city: "",
-            stateCode: "",
-            isLoading: true
-        });
+        setTimeout(() => {
+            this.setState({
+                city: "",
+                stateCode: "",
+                isLoading: false
+            });
+        }, 500);
     }
 
     saveCourseName(id, updatedCourseName) {
@@ -72,8 +74,6 @@ class CourseWeather extends Component {
         return date.toLocaleDateString("en-US", { month: "numeric", day: "numeric", timezone: "EST" });
     }
 
-
-
     async getWeather() {
         try {
             const response = await Axios.get(`${API.url}city=${this.state.city},${this.state.stateCode}&units=I&days=8&key=${API.key}`)
@@ -93,12 +93,12 @@ class CourseWeather extends Component {
                 info: response.data.data
             });
 
-            setTimeout(() => {
-                this.setState({
-                    courses: newCourses,
-                    isLoading: false
-                });
-            }, 500);
+            // setTimeout(() => {
+            this.setState({
+                courses: newCourses,
+                isLoading: true
+            });
+            // }, 500);
 
             localStorage.setItem("courses", JSON.stringify(newCourses));
 
