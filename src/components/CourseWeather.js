@@ -35,18 +35,6 @@ class CourseWeather extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-    handleSubmit(e) {
-        e.preventDefault();
-        this.getWeather();
-        setTimeout(() => {
-            this.setState({
-                city: "",
-                stateCode: "",
-                isLoading: false
-            });
-        }, 500);
-    }
-
     saveCourseName(id, updatedCourseName) {
         const updatedCourses = this.state.courses.map(el => el.id === id ? { ...el, courseName: updatedCourseName } : el);
 
@@ -74,6 +62,18 @@ class CourseWeather extends Component {
         return date.toLocaleDateString("en-US", { month: "numeric", day: "numeric", timezone: "EST" });
     }
 
+    handleSubmit(e) {
+        e.preventDefault();
+        this.getWeather();
+        setTimeout(() => {
+            this.setState({
+                city: "",
+                stateCode: "",
+                isLoading: false
+            });
+        }, 500);
+    }
+
     async getWeather() {
         try {
             const response = await Axios.get(`${API.url}city=${this.state.city},${this.state.stateCode}&units=I&days=8&key=${API.key}`)
@@ -84,31 +84,33 @@ class CourseWeather extends Component {
                 return null
             };
 
-            let newCourses = [...this.state.courses];
+            if (response.data) {
 
-            newCourses.push({
-                id: uuidv4(),
-                city: response.data.city_name,
-                state: response.data.state_code,
-                info: response.data.data
-            });
+                let newCourses = [...this.state.courses];
 
-            // setTimeout(() => {
-            this.setState({
-                courses: newCourses,
-                isLoading: true
-            });
-            // }, 500);
+                newCourses.push({
+                    id: uuidv4(),
+                    city: response.data.city_name,
+                    state: response.data.state_code,
+                    info: response.data.data
+                });
 
-            localStorage.setItem("courses", JSON.stringify(newCourses));
+                this.setState({
+                    courses: newCourses,
+                    isLoading: true
+                });
 
+                localStorage.setItem("courses", JSON.stringify(newCourses));
+            } else {
+                alert("Please enter a valid search")
+            }
         } catch (error) {
             if (error.response) {
                 /*
                  * The request was made and the server responded with a
                  * status code that falls out of the range of 2xx
                  */
-                alert("Please search valid city and state")
+                alert("Please enter a valid search")
                 console.log(error.response.data);
                 console.log(error.response.status);
                 console.log(error.response.headers);
