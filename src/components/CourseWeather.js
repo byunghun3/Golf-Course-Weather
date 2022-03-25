@@ -158,11 +158,12 @@ class CourseWeather extends Component {
                         <SearchBar className="CourseWeather-search-bar" name="city" placeHolder="Search city" value={this.state.city} onChange={this.handleChange} />
                         <SearchBar className="CourseWeather-search-bar" name="stateCode" placeHolder="State code" value={this.state.stateCode} onChange={this.handleChange} />
                         <button type="submit" className="CourseWeather-search-btn">
-                            {this.state.isLoading && <img className="CourseWeather-loader" src={GolfBall} alt="" />}
-                            {!this.state.isLoading && <span>SEARCH</span>}
+                            {this.state.isLoading ?
+                                <img className="CourseWeather-loader" src={GolfBall} alt="" />
+                                : <span>SEARCH</span>}
                         </button>
                     </form>
-                    <div className="CourseWeather-legend-card">
+                    <div className="CourseWeather-legend-card" data-testid="input-result">
                         <WeatherCard day="Day" date="MM/DD" icon="Weather Condition" maxTemp="High" minTemp="Low" rain="Rain" frost="Frost Delay" />
                     </div>
                 </div>
