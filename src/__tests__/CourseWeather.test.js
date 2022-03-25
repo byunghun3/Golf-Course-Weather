@@ -3,18 +3,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import CourseWeather from '../components/CourseWeather';
 
 describe("Course weather search", () => {
-    // test("renders city input value", () => {
-    //     render(<CourseWeather />);
-    //     const inputElement = screen.getByPlaceholderText(/search city/i);
-    //     expect(inputElement).toBeInTheDocument();
-    // });
-
-    // test("renders state input value", () => {
-    //     render(<CourseWeather />);
-    //     const inputElement = screen.getByPlaceholderText(/state code/i);
-    //     expect(inputElement).toBeInTheDocument();
-    // });
-
     test("city input value registers when typed", () => {
         render(<CourseWeather />);
         const inputElement = screen.getByPlaceholderText(/search city/i);
