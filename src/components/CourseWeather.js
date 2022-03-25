@@ -155,8 +155,8 @@ class CourseWeather extends Component {
                         <span className="CourseWeather-header-title">Golf Course Weather</span>
                     </div>
                     <form className="CourseWeather-form" onSubmit={this.handleSubmit}>
-                        <SearchBar className="CourseWeather-search-bar" name="city" placeholder="Search city" value={this.state.city} onChange={this.handleChange} />
-                        <SearchBar className="CourseWeather-search-bar" name="stateCode" placeholder="State code" value={this.state.stateCode} onChange={this.handleChange} />
+                        <SearchBar className="CourseWeather-search-bar" name="city" placeHolder="Search city" value={this.state.city} onChange={this.handleChange} />
+                        <SearchBar className="CourseWeather-search-bar" name="stateCode" placeHolder="State code" value={this.state.stateCode} onChange={this.handleChange} />
                         <button type="submit" className="CourseWeather-search-btn">
                             {this.state.isLoading && <img className="CourseWeather-loader" src={GolfBall} alt="" />}
                             {!this.state.isLoading && <span>SEARCH</span>}
