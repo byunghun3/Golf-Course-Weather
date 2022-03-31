@@ -38,16 +38,18 @@ You can save as many courses as you need to get a side-by-side weather compariso
 
 ## Reflection
 
-My goal for this project was to build an app using react class components and to consume an API.
+My goal for this project was to build an app using React class components and to consume an API.
 
 Golf became my hobby during the COVID pandemic. There were times when my weekend round would be spoiled due to bad weather, only for me to notice that another course that was a half-hour drive from my house in the opposite direction was dry and in perfect playing condition that same day.
 
 From playing rounds with my family, I noticed that we were generally willing to travel within 1 hour driving radius from our house. So I wanted to streamline the process of looking up weather forecasts for each town individually or help overcome feeling too lazy to even check the weather in advance of tee time reservation.
 
-I intentionally decided to use class components for my first react project, because I wanted to understand firsthand the improvements that using functional components could bring in a later project. I also wanted to be a developer who doesn't shy away from programming methods such as class components just because they're less favored in the industry, when there is still a good chance that I could be working with legacy codes containing them in a professional environment.
+I intentionally decided to use class components for my first React project, because I wanted to understand firsthand the improvements that using functional components could bring in a later project. I also wanted to be a developer who doesn't shy away from programming methods such as class components just because they're less favored in the industry, when there is still a good chance that I could be working with legacy codes containing them in a professional environment.
 
-For styling, I started with regular CSS files, then migrated them into SCSS files at the end when I was cleaning up my code. I wanted to focus first on getting my codes up and running, since it was my first react project. Then, I saw an opportunity where the same color, opacity, or box shadow properties were used in multiple places, so decided to update the code with SASS.
+I used Axios to use the Weatherbit API to call the weather forecast. I found Axios's syntax to be logical and clean. While I don't feel super comfortable working with APIs yet, I thought this was a nice starting point and I hope to practice more in future projects with both internal and external APIs.
+
+For styling, I started with regular CSS files, then migrated them into SCSS files at the end when I was cleaning up my code. I wanted to focus first on getting my codes up and running, since it was my first React project. Then, I saw an opportunity where the same color, opacity, or box shadow properties were used in multiple places, so decided to update the code with SASS.
 
 I also returned a couple months after the initial completion to add in testing for the first time in any of my apps. I kept hearing about how tedious and intimidating testing can feel, but I found myself enjoying writing tests for their similarly logical but unique syntax to the rest of the code. 
 
-From this project, I felt that react can be more efficient than vanilla JS when my project contains more functions and interactivity between components. I learned how to style a single-page app without relying on libraries such as Bootstrap or Material UI. I was able to appreciate how SASS really helps with managing consistency in style. I also learned the basics of react state and props, the usage of Axios to call an API, and the ways to display, edit, save, delete date on the page.
+From this project, I felt that React can be more efficient than vanilla JS when my project contains more functions and interactivity between components. I learned how to style a single-page app without relying on libraries such as Bootstrap or Material UI. I was able to appreciate how SASS really helps with managing consistency in style. I also learned the basics of React state and props and the ways to display, edit, save, delete date on the page.
