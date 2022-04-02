@@ -53,3 +53,5 @@ For styling, I started with regular CSS files, then migrated them into SCSS file
 I also returned a couple months after the initial completion to add in testing for the first time in any of my apps. I kept hearing about how tedious and intimidating testing can feel, but I found myself enjoying writing tests for their similarly logical but unique syntax to the rest of the code. 
 
 From this project, I felt that React can be more efficient than vanilla JS when my project contains more functionalities and interactivity between components. I learned how to style a single-page app without relying on libraries such as Bootstrap or Material UI. I was able to appreciate how SASS really helps with managing consistency in style. I also learned the basics of React state and props and the ways to display, edit, save, delete data on the page.
+
+For my next React project, I want to learn and use React functional components, Typescript, and Material UI to build a multi-page app.
