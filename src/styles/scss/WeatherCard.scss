@@ -32,15 +32,14 @@
     display: block;
     justify-content: center;
     margin-top: -8px;
-    margin-right: 5px;
     font-size: 12px;
 }
 
-.WeatherCard-raindrop > .icon {
+.WeatherCard-raindrop>.icon {
     width: 15px;
 }
 
-.WeatherCard-raindrop > .pop {
+.WeatherCard-raindrop>.pop {
     vertical-align: top;
 }
 
@@ -48,12 +47,17 @@
     display: block;
     justify-content: center;
     margin-top: -5px;
-    margin-right: 5px;
     font-size: 12px;
 }
 
 @media (max-width: 1000px) {
     .WeatherCard {
-        margin: 2% 0 2% 10%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 350px) {
+    .WeatherCard {
+        margin: 1rem 0;
     }
 }

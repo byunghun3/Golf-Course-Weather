@@ -62,7 +62,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 25px 4px;
-    text-shadow: $textShadow;    
+    text-shadow: $textShadow;
 }
 
 .Course-name {
@@ -82,7 +82,7 @@
     margin: 1.5% 0;
 }
 
-.Course-btn > * {
+.Course-btn>* {
     display: flex;
     margin: 0 7px;
 }
@@ -106,23 +106,89 @@
 }
 
 @media (max-width: 1000px) {
+    .Course {
+        margin: 3rem 0.5rem 3rem 0;
+    }
+
     .Course-list {
         width: 20%;
     }
+
     .Course-weather-row {
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
         width: 80%;
+    }
+
+    .Course-name {
+        margin: 1rem 0;
+        word-break: break-word;
+        font-size: 2.3rem;
+        font-weight: $boldFont;
+    }
+
+    .Course-loc {
+        margin: 1rem 0;
+        font-size: 1.7rem;
+    }
+
+    .Course-btn {
+        display: flex;
+        margin: 1rem 0;
+    }
+
+    .Course-btn-edit {
+        width: 3rem;
+    }
+
+    .Course-btn-dlt {
+        width: 1.8rem;
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 849px) {
+    .Course {
+        margin: 3rem 0.5rem 3rem 0;
+    }
+}
+
+@media (max-width: 615px) {
     .Course-list {
         width: 30%;
     }
+
     .Course-weather-row {
         justify-content: center;
         flex-wrap: wrap;
         width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    .Course {
+        margin: 5rem 0;
+    }
+
+    .Course-list {
+        width: 40%;
+    }
+
+    .Course-weather-row {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+}
+
+@media (max-width: 350px) {
+    .Course-list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        width: 50%;
+    }
+
+    .Course-weather-row {
+        width: 50%;
     }
 }

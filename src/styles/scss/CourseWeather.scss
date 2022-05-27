@@ -19,10 +19,10 @@
     align-items: center;
     margin-top: 10px;
     font-size: 40px;
-    text-shadow: $textShadow;  
+    text-shadow: $textShadow;
 }
 
-.CourseWeather-header > img {
+.CourseWeather-header>img {
     vertical-align: bottom;
     height: auto;
     width: 5rem;
@@ -35,7 +35,7 @@
 }
 
 .CourseWeather-form {
-    flex: 5;
+    flex: 4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,31 +95,72 @@
 
 @keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 849px) {
     .CourseWeather-top-section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
     }
-    .CourseWeather-header > img {
-        width: 3rem;
+
+    .CourseWeather-header {
+        font-size: 6rem;
+    }
+
+    .CourseWeather-header>img {
+        width: 5rem;
         margin-right: 0.5rem;
     }
+
     .CourseWeather-header-title {
-        margin-left: 0.5rem;
+        margin: 0;
     }
+
     .CourseWeather-form {
-        margin: 2% 0;
+        margin-top: 0;
+        margin-bottom: 2%;
     }
+
+    .CourseWeather-search-bar {
+        height: 2.5rem;
+    }
+
     .CourseWeather-legend-card {
-        margin: 2% 0;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 499px) {
+    .CourseWeather-top-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CourseWeather-form {
+        flex-direction: column;
+    }
+
+    .CourseWeather-search-bar {
+        width: 60vw;
+    }
+
+    .CourseWeather-search-btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .CourseWeather-header {
+        font-size: 4rem;
     }
 }
